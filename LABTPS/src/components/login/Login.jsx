@@ -8,7 +8,7 @@ const LoginForm = () => {
     const value = event.target.value;
     setUsername(value);
     if (value.toLowerCase().includes('o')) {
-      alert('Por favor, ¡Nombres de usuario sin la letra o!');
+        errorMessage = alert('Por favor, ¡Nombres de usuario sin la letra o!');
     }
   };
 
@@ -18,7 +18,7 @@ const LoginForm = () => {
       return;
     }
 
-    alert('“¡Usuario registrado correctamente!”');
+    errorMessage = alert('“¡Usuario registrado correctamente!”');
   };
 
   return (
